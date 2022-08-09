@@ -9,7 +9,7 @@ internal class Program
     static ConsoleCommunicator? comm = null;
 
     [STAThread]
-    static void Main(string[] args)
+    static void Main()
     {
         comm = new(true);
         Thread windowThread = new(new ThreadStart(OpenMainWindow));

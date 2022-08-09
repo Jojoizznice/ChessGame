@@ -41,6 +41,7 @@ namespace UI
             heightCache = Height;
             widthCache = Width;
             _communicator = communicator;
+            _communicator.AddToPrint("Started successfully");
         }
 
 
