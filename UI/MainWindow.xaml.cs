@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UI.Models;
 using System.Windows;
+using System;
 
 namespace UI
 {
@@ -12,6 +13,17 @@ namespace UI
     public partial class MainWindow : Window
     {
         private IConsoleCommunicatorModel _communicator;
+        public string?[] GetToPrint()
+        {
+            string?[] resultFromComm = _communicator.GetToPrint();
+            string?[] resultToReturn = new string[resultFromComm.Length];
+            Array.Copy(resultFromComm, resultToReturn, resultFromComm.Length);
+            return resultToReturn;
+        }
+        public bool IsClosed
+        {
+            get => _communicator.IsClosed;
+        }
         
         private int counter;
         private bool counterIsRunning;
