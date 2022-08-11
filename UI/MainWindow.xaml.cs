@@ -1,9 +1,6 @@
-﻿using System.Diagnostics;
-using System.Threading;
-using System.Threading.Tasks;
-using UI.Models;
+﻿using System;
 using System.Windows;
-using System;
+using UI.Models;
 
 namespace UI
 {
@@ -24,11 +21,15 @@ namespace UI
         {
             get => _communicator.IsClosed;
         }
-        
+
         private int counter;
-        private bool counterIsRunning;
         private double heightCache;
         private double widthCache;
+
+        (double height, double width) GetValues()
+        {
+            return (Height, Width);
+        }
 
         /// <summary>
         /// Initializes the MainWindow
@@ -36,53 +37,17 @@ namespace UI
         /// <param name="communicator">The ConsoleCommunicator used to communicate with console</param>
         public MainWindow(IConsoleCommunicatorModel communicator)
         {
-            InitializeComponent();
-            SizeChanged += OnResize;
-            heightCache = Height;
-            widthCache = Width;
             _communicator = communicator;
-            _communicator.AddToPrint("Started successfully");
-        }
-
-
-        private void OnResize(object sender, SizeChangedEventArgs e)
-        {
-            counter = 100;
-            if (!counterIsRunning)
+            try
             {
-                Task.Run(() => Counter());
-                counterIsRunning = true;
+                InitializeComponent();
+                heightCache = Height;
+                widthCache = Width;
+                _communicator.AddToPrint("Started successfully");
             }
-        }
-
-        private void Counter()
-        {
-            counter -= 1;
-            Thread.Sleep(1);
-            if (counter < 0)
+            catch (Exception ex)
             {
-                TimerFinished();
-            }
-        }
-
-        private void TimerFinished()
-        {
-            bool heightBigger = Height > heightCache;
-            bool widthBigger = Width > widthCache;
-            bool heightBiggerWidth = Height > Width;
-
-            heightCache = Height;
-            widthCache = Width;
-
-            if (!heightBigger || !widthBigger)
-            {
-                if (heightBiggerWidth)
-                {
-                    Width = Height;
-                    return;
-                }
-
-                Height = Width;
+                MessageBox.Show(ex.ToString(), "EXCEPTION", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
