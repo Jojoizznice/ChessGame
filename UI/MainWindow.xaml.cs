@@ -22,15 +22,6 @@ namespace UI
             get => _communicator.IsClosed;
         }
 
-        private int counter;
-        private double heightCache;
-        private double widthCache;
-
-        (double height, double width) GetValues()
-        {
-            return (Height, Width);
-        }
-
         /// <summary>
         /// Initializes the MainWindow
         /// </summary>
@@ -41,8 +32,6 @@ namespace UI
             try
             {
                 InitializeComponent();
-                heightCache = Height;
-                widthCache = Width;
                 _communicator.AddToPrint("Started successfully");
             }
             catch (Exception ex)
