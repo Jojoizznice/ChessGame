@@ -12,47 +12,35 @@
     <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--#region Board-->
-        <Grid Grid.Row="0" Grid.Column="0" x:Name="chessBoard">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="12"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="75"/>
-                <ColumnDefinition Width="12"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="12"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="12"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
 
 
-
-
+        <Grid>
             <!--#region Row0 -->
             <TextBlock Grid.Row="1" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -180,7 +168,6 @@
             <TextBlock Grid.Row="10" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Grid.Row="10" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Grid.Row="10" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
             <!--#endregion-->
 
             <!--#region Figuren-->
