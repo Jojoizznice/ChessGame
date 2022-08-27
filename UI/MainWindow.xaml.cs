@@ -36,7 +36,8 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "EXCEPTION", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ein Fehler ist aufgetreten: \n\nEine Ausnahme vom Typ {ex.GetType()} wurde geworfen" + $"\n\nDas Programm wird geschlossen\n\n{ex}", $"Fehler :(", MessageBoxButton.OK, MessageBoxImage.Error);
+                Environment.Exit(-1);
             }
         }
     }

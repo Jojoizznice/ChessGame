@@ -7,4 +7,15 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Schach_Turm_Schwarz.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Schach_Turm_Schwarz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CustomToolNamespace>UI</CustomToolNamespace>
+    </Resource>
+  </ItemGroup>
+
 </Project>
