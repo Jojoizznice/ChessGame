@@ -5,180 +5,207 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="664" Width="644"
-        MinHeight="620" MinWidth="620"
+        Title="MainWindow" Height="690" Width="670"
+        MinHeight="690" MinWidth="670"
         ResizeMode="CanResize">
 
-    <Grid x:Name="mainGrid">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
+    <Grid x:Name="backgroundGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="12"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="12"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" x:Name="Background" FlowDirection="RightToLeft"/>
+
+        <Grid x:Name="mainGrid" Grid.Row="0" Grid.Column="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="660"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="660"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
 
-        <Grid>
-            <!--#region Row0 -->
-            <TextBlock Grid.Row="1" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Grid x:Name="ChessGrid" Grid.Row="1" Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--#region Row0 -->
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 
-            <!--#endregion-->
+                <!--#endregion-->
 
-            <!--#region Row1 -->
-            <!--<Rectangle Grid.Row="2" Grid.Column="1" Fill="BurlyWood"/>-->
-            <TextBlock Grid.Row="2" Grid.Column="1" Text="A" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="2" Grid.Column="2" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="2" Grid.Column="3" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="2" Grid.Column="4" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="2" Grid.Column="5" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="2" Grid.Column="6" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="2" Grid.Column="7" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="2" Grid.Column="8" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="2" Grid.Column="9" Fill="BurlyWood"/>
-            <TextBlock Grid.Row="2" Grid.Column="10" Text=" A" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row1 -->
+                <!--<Rectangle Grid.Row="2" Grid.Column="1" Fill="BurlyWood"/>-->
+                <TextBlock Grid.Row="2" Grid.Column="1" Text=" A" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="2" Grid.Column="2" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="2" Grid.Column="3" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="2" Grid.Column="4" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="2" Grid.Column="5" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="2" Grid.Column="6" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="2" Grid.Column="7" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="2" Grid.Column="8" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="2" Grid.Column="9" Fill="BurlyWood"/>
+                <TextBlock Grid.Row="2" Grid.Column="10" Text=" A" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row2 -->
-            <TextBlock Grid.Row="3" Grid.Column="1" Text="B" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="3" Grid.Column="2" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="3" Grid.Column="3" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="3" Grid.Column="4" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="3" Grid.Column="5" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="3" Grid.Column="6" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="3" Grid.Column="7" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="3" Grid.Column="8" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="3" Grid.Column="9" Fill="#FD3F1515"/>
-            <TextBlock Grid.Row="3" Grid.Column="10" Text=" B" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row2 -->
+                <TextBlock Grid.Row="3" Grid.Column="1" Text=" B" VerticalAlignment="Center"  HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="3" Grid.Column="2" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="3" Grid.Column="3" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="3" Grid.Column="4" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="3" Grid.Column="5" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="3" Grid.Column="6" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="3" Grid.Column="7" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="3" Grid.Column="8" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="3" Grid.Column="9" Fill="#FD3F1515"/>
+                <TextBlock Grid.Row="3" Grid.Column="10" Text=" B" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row3 -->
-            <TextBlock Grid.Row="4" Grid.Column="1" Text="C" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="4" Grid.Column="2" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="4" Grid.Column="3" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="4" Grid.Column="4" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="4" Grid.Column="5" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="4" Grid.Column="6" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="4" Grid.Column="7" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="4" Grid.Column="8" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="4" Grid.Column="9" Fill="BurlyWood"/>
-            <TextBlock Grid.Row="4" Grid.Column="10" Text=" C" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row3 -->
+                <TextBlock Grid.Row="4" Grid.Column="1" Text=" C" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="4" Grid.Column="2" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="4" Grid.Column="3" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="4" Grid.Column="4" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="4" Grid.Column="5" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="4" Grid.Column="6" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="4" Grid.Column="7" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="4" Grid.Column="8" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="4" Grid.Column="9" Fill="BurlyWood"/>
+                <TextBlock Grid.Row="4" Grid.Column="10" Text=" C" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region  Row4 -->
-            <TextBlock Grid.Row="5" Grid.Column="1" Text="D" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="5" Grid.Column="2" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="5" Grid.Column="3" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="5" Grid.Column="4" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="5" Grid.Column="5" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="5" Grid.Column="6" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="5" Grid.Column="7" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="5" Grid.Column="8" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="5" Grid.Column="9" Fill="#FD3F1515"/>
-            <TextBlock Grid.Row="5" Grid.Column="10" Text=" D" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region  Row4 -->
+                <TextBlock Grid.Row="5" Grid.Column="1" Text=" D" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="5" Grid.Column="2" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="5" Grid.Column="3" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="5" Grid.Column="4" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="5" Grid.Column="5" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="5" Grid.Column="6" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="5" Grid.Column="7" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="5" Grid.Column="8" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="5" Grid.Column="9" Fill="#FD3F1515"/>
+                <TextBlock Grid.Row="5" Grid.Column="10" Text=" D" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row5-->
-            <TextBlock Grid.Row="6" Grid.Column="1" Text="E" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="6" Grid.Column="2" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="6" Grid.Column="3" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="6" Grid.Column="4" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="6" Grid.Column="5" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="6" Grid.Column="6" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="6" Grid.Column="7" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="6" Grid.Column="8" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="6" Grid.Column="9" Fill="BurlyWood"/>
-            <TextBlock Grid.Row="6" Grid.Column="10" Text=" E" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row5-->
+                <TextBlock Grid.Row="6" Grid.Column="1" Text=" E" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="6" Grid.Column="2" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="6" Grid.Column="3" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="6" Grid.Column="4" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="6" Grid.Column="5" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="6" Grid.Column="6" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="6" Grid.Column="7" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="6" Grid.Column="8" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="6" Grid.Column="9" Fill="BurlyWood"/>
+                <TextBlock Grid.Row="6" Grid.Column="10" Text=" E" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row6-->
-            <TextBlock Grid.Row="7" Grid.Column="1" Text="F" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="7" Grid.Column="2" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="7" Grid.Column="3" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="7" Grid.Column="4" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="7" Grid.Column="5" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="7" Grid.Column="6" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="7" Grid.Column="7" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="7" Grid.Column="8" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="7" Grid.Column="9" Fill="#FD3F1515"/>
-            <TextBlock Grid.Row="7" Grid.Column="10" Text=" F" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row6-->
+                <TextBlock Grid.Row="7" Grid.Column="1" Text=" F" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="7" Grid.Column="2" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="7" Grid.Column="3" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="7" Grid.Column="4" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="7" Grid.Column="5" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="7" Grid.Column="6" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="7" Grid.Column="7" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="7" Grid.Column="8" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="7" Grid.Column="9" Fill="#FD3F1515"/>
+                <TextBlock Grid.Row="7" Grid.Column="10" Text=" F" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row7-->
-            <TextBlock Grid.Row="8" Grid.Column="1" Text="G" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="8" Grid.Column="2" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="8" Grid.Column="3" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="8" Grid.Column="4" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="8" Grid.Column="5" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="8" Grid.Column="6" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="8" Grid.Column="7" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="8" Grid.Column="8" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="8" Grid.Column="9" Fill="BurlyWood"/>
-            <TextBlock Grid.Row="8" Grid.Column="10" Text=" G" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row7-->
+                <TextBlock Grid.Row="8" Grid.Column="1" Text=" G" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="8" Grid.Column="2" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="8" Grid.Column="3" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="8" Grid.Column="4" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="8" Grid.Column="5" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="8" Grid.Column="6" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="8" Grid.Column="7" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="8" Grid.Column="8" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="8" Grid.Column="9" Fill="BurlyWood"/>
+                <TextBlock Grid.Row="8" Grid.Column="10" Text=" G" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row8-->
-            <TextBlock Grid.Row="9" Grid.Column="1" Text="H" VerticalAlignment="Center"/>
-            <Rectangle Grid.Row="9" Grid.Column="2" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="9" Grid.Column="3" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="9" Grid.Column="4" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="9" Grid.Column="5" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="9" Grid.Column="6" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="9" Grid.Column="7" Fill="#FD3F1515"/>
-            <Rectangle Grid.Row="9" Grid.Column="8" Fill="BurlyWood"/>
-            <Rectangle Grid.Row="9" Grid.Column="9" Fill="#FD3F1515"/>
-            <TextBlock Grid.Row="9" Grid.Column="10" Text=" H" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row8-->
+                <TextBlock Grid.Row="9" Grid.Column="1" Text=" H" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Rectangle Grid.Row="9" Grid.Column="2" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="9" Grid.Column="3" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="9" Grid.Column="4" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="9" Grid.Column="5" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="9" Grid.Column="6" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="9" Grid.Column="7" Fill="#FD3F1515"/>
+                <Rectangle Grid.Row="9" Grid.Column="8" Fill="BurlyWood"/>
+                <Rectangle Grid.Row="9" Grid.Column="9" Fill="#FD3F1515"/>
+                <TextBlock Grid.Row="9" Grid.Column="10" Text=" H" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Row9-->
-            <TextBlock Grid.Row="10" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="10" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <!--#endregion-->
+                <!--#region Row9-->
+                <TextBlock Grid.Row="10" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!--#endregion-->
 
-            <!--#region Figuren-->
-            <Rectangle Grid.Row="2" Grid.Column="2" >
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/UI;component/Images/Schach_Turm_Schwarz.png"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <!--#endregion-->
+                <!--#region Figuren-->
+                <Rectangle Grid.Row="2" Grid.Column="2" >
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/UI;component/Images/Schach_Turm_Schwarz.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <!--#endregion-->
 
-            <!--#endregion-->
+                <!--#endregion-->
+            </Grid>
         </Grid>
     </Grid>
 </Window>
