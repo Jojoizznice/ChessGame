@@ -1,17 +1,11 @@
 ﻿using UI.Models;
-using System.Collections.Concurrent;
 
 namespace Schach.Console;
 
-public class ConsoleCommunicator : IConsoleCommunicatorModel
+public class ConsoleCommunicator(bool isConsole) : IConsoleCommunicatorModel
 {
     public bool IsClosed { get; set; }
-    public bool IsConsole { get; }
-
-    public ConsoleCommunicator(bool isConsole)
-    {
-        IsConsole = isConsole;
-    }
+    public bool IsConsole { get; } = isConsole;
 
     readonly List<string?> strings = new();
     
@@ -25,6 +19,7 @@ public class ConsoleCommunicator : IConsoleCommunicatorModel
         if (value is null)
         {
             strings.Add("");
+            return;
         }
 
         strings.Add(value!.ToString());
