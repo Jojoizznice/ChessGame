@@ -13,7 +13,7 @@ partial class MainWindow
         SolidColorBrush bright = new(Color.FromArgb(0xFF, 0xEE, 0xC8, 0x97));
 
         for (int i = 0; i < 64; i++)
-        {
+        {     
             Rectangle rect = new()
             {
                 HorizontalAlignment = HorizontalAlignment.Stretch,
@@ -28,8 +28,6 @@ partial class MainWindow
             Grid.SetColumn(rect, ( i / 8 ) + 2);
             Grid.SetRow(rect, ( i % 8 ) + 2);
         }
-
-        Panel.SetZIndex(rook, 1);
     }
 
     static bool GetBrightDark(int position)
