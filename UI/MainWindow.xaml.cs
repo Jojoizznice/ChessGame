@@ -34,6 +34,7 @@ namespace UI
                 InitializeComponent();
                 _communicator.AddToPrint("Started successfully");
                 DrawBoard();
+                DrawPieces();
             }
             catch (Exception ex)
             {

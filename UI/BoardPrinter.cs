@@ -9,7 +9,7 @@ partial class MainWindow
 {
     void DrawBoard() 
     {
-        SolidColorBrush dark = new(Color.FromArgb(0xFF, 0x5F, 0x35, 0x35));
+        SolidColorBrush dark = new(Color.FromArgb(0xFF, 0x5F, 0x45, 0x45));
         SolidColorBrush bright = new(Color.FromArgb(0xFF, 0xEE, 0xC8, 0x97));
 
         for (int i = 0; i < 64; i++)
