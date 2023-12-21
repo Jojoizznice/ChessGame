@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using System.Windows;
 using UI.Models;
 
@@ -34,6 +36,7 @@ namespace UI
                 InitializeComponent();
                 _communicator.AddToPrint("Started successfully");
                 DrawBoard();
+                DrawPieces();
             }
             catch (Exception ex)
             {
