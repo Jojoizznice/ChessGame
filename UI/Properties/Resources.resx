@@ -118,11 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Schach Läufer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Schach Läufer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Schach Läufer_Schwarz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Schach Läufer_Schwarz.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pieceDictionary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\pieceDictionary.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Schach_Bauer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Schach_Bauer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -141,6 +138,12 @@
   </data>
   <data name="Schach_König_Schwarz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Schach_König_Schwarz.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Schach_Läufer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Schach_Läufer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Schach_Läufer_Schwarz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Schach_Läufer_Schwarz.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Schach_Springer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Schach_Springer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

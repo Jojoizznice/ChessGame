@@ -63,6 +63,16 @@ namespace UI.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
+        internal static byte[] pieceDictionary {
+            get {
+                object obj = ResourceManager.GetObject("pieceDictionary", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
+        /// </summary>
         internal static byte[] Schach_Bauer {
             get {
                 object obj = ResourceManager.GetObject("Schach_Bauer", resourceCulture);
@@ -125,7 +135,7 @@ namespace UI.Properties {
         /// </summary>
         internal static byte[] Schach_Läufer {
             get {
-                object obj = ResourceManager.GetObject("Schach Läufer", resourceCulture);
+                object obj = ResourceManager.GetObject("Schach_Läufer", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -135,7 +145,7 @@ namespace UI.Properties {
         /// </summary>
         internal static byte[] Schach_Läufer_Schwarz {
             get {
-                object obj = ResourceManager.GetObject("Schach Läufer_Schwarz", resourceCulture);
+                object obj = ResourceManager.GetObject("Schach_Läufer_Schwarz", resourceCulture);
                 return ((byte[])(obj));
             }
         }

@@ -1,0 +1,14 @@
+﻿{
+	"König": "K",
+	"König_Schwarz": "k",
+	"Dame": "Q",
+	"Dame_Schwarz": "q",
+	"Turm": "R",
+	"Turm_Schwarz": "r",
+	"Läufer": "B",
+	"Läufer_Schwarz": "b",
+	"Springer": "N",
+	"Springer_Schwarz": "n",
+	"Bauer": "P",
+	"Bauer_Schwarz": "p"
+}
