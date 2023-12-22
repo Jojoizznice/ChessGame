@@ -68,70 +68,70 @@
                 </Grid.RowDefinitions>
 
                 <!--#region Row0 -->
-                <TextBlock Grid.Row="1" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="4" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="5" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="6" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="7" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="8" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="9" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 
                 <!--#endregion-->
 
                 <!--#region Row1 -->
-                <TextBlock Grid.Row="2" Grid.Column="1" Text=" A" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="2" Grid.Column="10" Text=" A" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text=" 1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="2" Grid.Column="10" Text=" 1" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row2 -->
-                <TextBlock Grid.Row="3" Grid.Column="1" Text=" B" VerticalAlignment="Center"  HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="3" Grid.Column="10" Text=" B" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text=" 2" VerticalAlignment="Center"  HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Grid.Column="10" Text=" 2" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row3 -->
-                <TextBlock Grid.Row="4" Grid.Column="1" Text=" C" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="4" Grid.Column="10" Text=" C" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text=" 3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="4" Grid.Column="10" Text=" 3" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region  Row4 -->
-                <TextBlock Grid.Row="5" Grid.Column="1" Text=" D" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="5" Grid.Column="10" Text=" D" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text=" 4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Grid.Column="10" Text=" 4" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row5-->
-                <TextBlock Grid.Row="6" Grid.Column="1" Text=" E" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="6" Grid.Column="10" Text=" E" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="6" Grid.Column="1" Text=" 5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="6" Grid.Column="10" Text=" 5" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row6-->
-                <TextBlock Grid.Row="7" Grid.Column="1" Text=" F" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="7" Grid.Column="10" Text=" F" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="7" Grid.Column="1" Text=" 6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="7" Grid.Column="10" Text=" 6" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row7-->
-                <TextBlock Grid.Row="8" Grid.Column="1" Text=" G" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="8" Grid.Column="10" Text=" G" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="8" Grid.Column="1" Text=" 7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="8" Grid.Column="10" Text=" 7" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row8-->
-                <TextBlock Grid.Row="9" Grid.Column="1" Text=" H" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="9" Grid.Column="10" Text=" H" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="9" Grid.Column="1" Text=" 8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="9" Grid.Column="10" Text=" 8" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
                 <!--#region Row9-->
-                <TextBlock Grid.Row="10" Grid.Column="2" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="3" Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="4" Text="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="5" Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="6" Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="7" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="8" Text="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="10" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="2" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="3" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="4" Text="C" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="5" Text="D" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="6" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="7" Text="F" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="8" Text="G" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="10" Grid.Column="9" Text="H" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
-                <Rectangle x:Name="RotateButton" Grid.Row="1" Grid.Column="1" Panel.ZIndex="2" />
+                <Rectangle x:Name="RotateButton" Grid.Row="1" Grid.Column="1" Panel.ZIndex="0" />
                 <TextBlock x:Name="RotateButtonText" Grid.Column="1" Grid.Row="1" Text="🗘" HorizontalAlignment="Center" FontSize="10" Panel.ZIndex="1"/>
 
             </Grid>
