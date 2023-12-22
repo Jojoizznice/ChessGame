@@ -35,6 +35,7 @@ namespace UI
                 _communicator.AddToPrint("Started successfully");
                 DrawBoard();
                 DrawPieces();
+                SetUpRotate();
             }
             catch (Exception ex)
             {

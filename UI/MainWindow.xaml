@@ -131,15 +131,9 @@
                 <TextBlock Grid.Row="10" Grid.Column="9" Text="8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <!--#endregion-->
 
-                <!--#region Figuren-->
-                <Rectangle Grid.Row="2" Grid.Column="2" x:Name="rook">
-                    <Rectangle.Fill>
-                        <ImageBrush ImageSource="/UI;component/Images/Schach_Turm_Schwarz.png"/>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <!--#endregion-->
+                <Rectangle x:Name="RotateButton" Grid.Row="1" Grid.Column="1" Panel.ZIndex="2" />
+                <TextBlock x:Name="RotateButtonText" Grid.Column="1" Grid.Row="1" Text="🗘" HorizontalAlignment="Center" FontSize="10" Panel.ZIndex="1"/>
 
-                <!--#endregion-->
             </Grid>
         </Grid>
     </Grid>
